@@ -1,0 +1,100 @@
+body{
+
+    font-family: sans-serif;
+    /* remove the default margine */
+    margin : 0;
+    /* bringing everthing to center */
+    display : flex;
+    /* */
+    flex-direction:  column ;
+    /* briging into center horizontally*/
+    align-items: center;
+
+    /*to bring into center vertically
+    first we have to set the height of the body to the height of the screens
+    then justify content center to bring everything into center
+    */
+    height: 100vh;
+    justify-content: center;
+    background: url("https://cdn.discordapp.com/attachments/849467575859150858/948174053934518353/wallhaven-k7838q_1920x1080.png");
+    background-size:cover;
+
+    /* to remove the scroll bars*/
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(255, 8, 8) 
+
+}
+
+/* we use . cause its a div*/
+.clock{
+    /* for next to each other  */
+    display: flex;
+}
+
+/* targeting the div of inside clock div*/
+.clock div{
+    margin: 5px;
+    /* to make the position realative */
+    position :relative;
+}
+
+/* to target all the span that is inside clock inside div */
+.clock span{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: rgb(12, 52, 139);
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /* to give shodow to the text 
+    text shadow: position of horizontalShadow verticalShadow blur radious rgb value */
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.3)        
+}
+
+/* to target text class which is inside span we can directly use clock class and the class span inside it */
+.clock .text{
+    height : 30px;
+    font-size : 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background:rgb(3, 3, 47);
+    opacity:.8;
+
+}
+
+/* we need to change AM which is inside the div clock .... */
+
+/* ampm is the id so we have added # after the class name to target it */
+
+.clock #ampm{
+    bottom: 0;
+    position : absolute;
+    width: 60px;
+    height:30px;
+    
+    font-size : 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background:rgb(180, 60, 110);
+    opacity: 0.8;;
+    
+    
+
+}
+
+
+
+
+

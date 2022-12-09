@@ -1,0 +1,54 @@
+
+<!-- doctype html for telling the brouse that we are using html version 5 -->
+<!DOCTYPE html>
+<!-- -->
+<html lang="en">
+<head>
+    <!-- defines the html character coding -->
+    <meta charset="UTF-8">
+    <!-- to tell browser to use most recent rendering engine which is edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--- view point meta tag to resize the page -->
+    <!-- width will define the size of the page depending on the device used -->
+    <!-- initial for the initial zoom level of the browser and is set to 100 % by default -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- we add css link just after the tittle -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h2> Digital clock </h2>
+    <!-- this id division for clock -->
+    <div class="clock">
+
+        <!-- another empty division for hours , minutes and seconds  -->
+        <div >
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+
+        <!-- option +  shift + arrow down -->
+        <!-- we copy this for 3 more times-->
+        <div >
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+
+        <div >
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+
+        <div >
+            <span id="ampm">AM</span>  
+        </div>
+        
+
+        <!-- they all are relative to each other  and -->
+    </div>
+    <!-- end of the body section we add javascript link-->
+    <script src="script.js"></script>
+</body>
+</html>
